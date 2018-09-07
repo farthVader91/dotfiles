@@ -1,0 +1,29 @@
+ServerAliveInterval 28
+ControlMaster       auto
+ControlPath         ~/.ssh/.control_%C
+ControlPersist      20m
+IgnoreUnknown       AddKeysToAgent,UseKeychain
+AddKeysToAgent      yes
+UseKeychain         yes
+
+***REMOVED***
+    ForwardAgent    yes
+
+***REMOVED***
+    # prevent expired temp SSH key from being used
+    ControlMaster   no
+
+***REMOVED*** *-staging
+    ForwardAgent    yes
+***REMOVED*** ssh-proxy %h %p
+
+***REMOVED***
+    ControlMaster   no
+
+Host *.dev
+    ForwardAgent    yes
+***REMOVED***
+
+Host app book off adm
+    ForwardAgent    yes
+***REMOVED***

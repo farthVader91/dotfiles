@@ -1,3 +1,5 @@
 [user]
 ***REMOVED***
 	name = Vishal Gowda
+[http]
+	proxy = http://localhost:3128

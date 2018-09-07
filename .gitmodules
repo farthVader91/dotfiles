@@ -1,3 +1,6 @@
 [submodule ".live-packs"]
 	path = .live-packs
 	url = https://github.com/farthVader91/.live-packs.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/farthVader91/.oh-my-zsh.git

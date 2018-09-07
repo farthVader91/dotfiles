@@ -1,0 +1,3 @@
+[submodule ".live-packs"]
+	path = .live-packs
+	url = https://github.com/farthVader91/.live-packs.git

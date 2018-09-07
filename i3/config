@@ -228,21 +228,21 @@ bindsym --release Control+Mod1+p exec --no-startup-id "scrot -s -e 'mv $f ~/Pict
 # Multi-monitor related
 # Press $mod+Shift+d followed by either m, s, Escape or Return to switch to single monitor,
 # multi-monitor or return to the default mode, respectively.
-set $mode_launcher Display Mode: [m]ulti [s]ingle
-mode "$mode_launcher" {
+set $display_mode_launcher Display Mode: [m]ulti [s]ingle
+mode "$display_mode_launcher" {
     # mode doesn't automatically exit for some reason, so we expliclity switch to "default" mode.
     bindsym m exec --no-startup-id "/home/vgowda/bin/redock; i3-msg mode default"
     bindsym s exec --no-startup-id "/home/vgowda/bin/undock; i3-msg mode default"
 
-    bindsym Escape mode "default"
+    bindsym Emw_scape mode "default"
     bindsym Return mode "default"
 }
-bindsym $mod+Shift+d mode "$mode_launcher"
+bindsym $mod+Shift+d mode "$display_mode_launcher"
 
 # Press $mod+Shift+w followed by either l, c, r, Escape or Return to move workspace to left monitor,
 # center monitor or right monitor or return to the default mode, respectively.
-set $mode_launcher Move Workspace Mode: [l]eft [c]enter [r]ight
-mode "$mode_launcher" {
+set $mw_mode_launcher Move Workspace Mode: [l]eft [c]enter [r]ight
+mode "$mw_mode_launcher" {
     # again mode doesn't switch back automatically; sos we chain the call to explicitly switch to "default" mode.
     bindsym l move workspace to output DP1-2; mode default
     bindsym c move workspace to output DP1-3; mode default
@@ -251,7 +251,7 @@ mode "$mode_launcher" {
     bindsym Escape mode "default"
     bindsym Return mode "default"
 }
-bindsym $mod+Shift+w mode "$mode_launcher"
+bindsym $mod+Shift+w mode "$mw_mode_launcher"
 
 # No border
 new_window none

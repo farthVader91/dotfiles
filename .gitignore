@@ -1,0 +1,7 @@
+google-chrome/
+*~
+pulse/
+dconf/
+cmus/*
+!cmus/rc
+menus/

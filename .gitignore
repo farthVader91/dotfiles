@@ -6,3 +6,6 @@ cmus/*
 !cmus/rc
 menus/
 bin/idea.sh
+transmission-daemon/
+!transmission-daemon/settings.json
+configstore/

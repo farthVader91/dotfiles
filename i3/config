@@ -253,6 +253,20 @@ mode "$mw_mode_launcher" {
 }
 bindsym $mod+Shift+w mode "$mw_mode_launcher"
 
+# Cmus mode
+set $cmus_mode_launcher Cmus Mode: [p]lay [s]top [n]ext [b]efore [r]epeat [S]huffle
+mode "$cmus_mode_launcher" {
+    bindsym p exec --no-startup-id "cmus-remote -p"; mode default
+    bindsym s exec --no-startup-id "cmus-remote -u"; mode default
+    bindsym n exec --no-startup-id "cmus-remote -n"; mode default
+    bindsym r exec --no-startup-id "cmus-remote -R"; mode default
+    bindsym S exec --no-startup-id "cmus-remote -S"; mode default
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+bindsym $mod+Shift+m mode "$cmus_mode_launcher"
+
 # No border
 new_window none
 

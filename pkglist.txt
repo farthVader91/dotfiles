@@ -51,6 +51,7 @@ jfsutils
 jre8-openjdk
 kdb
 less
+libmad
 libtool
 licenses
 linux

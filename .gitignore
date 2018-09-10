@@ -4,6 +4,7 @@ pulse/
 dconf/
 cmus/*
 !cmus/rc
+!cmus/autosave
 menus/
 bin/idea.sh
 transmission-daemon/

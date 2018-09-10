@@ -53,6 +53,7 @@ kdb
 less
 libmad
 libtool
+#libva-intel-driver
 licenses
 linux
 logrotate
@@ -62,15 +63,19 @@ m4
 make
 man-db
 man-pages
+maven
 mdadm
-mesa-demos
+#mesa
+#mesa-demos
 nano
 netctl
 networkmanager
+network-manager-applet
 npm
 ntfs-3g
 nvidia
 openssh
+pac4cli-git
 pacman
 parted
 patch
@@ -78,6 +83,7 @@ pavucontrol
 pciutils
 perl
 pkgconf
+polybar-git
 powerline
 powerline-fonts
 procps-ng
@@ -87,10 +93,10 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 reiserfsprogs
 rofi
-s-nail
 scrot
 sed
 shadow
+s-nail
 sudo
 sysfsutils
 systemd
@@ -110,6 +116,7 @@ util-linux
 vi
 which
 xclip
+#xf86-video-intel
 xfsprogs
 xorg-server
 xorg-xev

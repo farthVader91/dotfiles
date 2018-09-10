@@ -292,7 +292,7 @@ exec idea
 # finds out, if available)
 bar {
     strip_workspace_numbers yes
-    font pango:DejaVu Sans Mono 11
+    font pango: Mono, FontAwesome  11
     colors {
         background #000000
         statusline #00A5FF

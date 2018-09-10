@@ -9,3 +9,4 @@ bin/idea.sh
 transmission-daemon/
 !transmission-daemon/settings.json
 configstore/
+bin/idea

@@ -288,4 +288,5 @@ exec google-chrome-stable
 exec --no-startup-id emc
 exec idea
 
-# TODO: Invoke polybar
+# Start polybar
+exec_always --no-startup-id launch-polybar

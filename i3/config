@@ -280,6 +280,7 @@ focus_follows_mouse no
 assign [class="Emacs"] $ws3
 assign [class="Google-chrome"] $ws2
 assign [class="jetbrains-idea"] $ws7
+assign [class="Conky"] $ws9
 
 # Startup applications
 exec --no-startup-id i3-msg 'workspace 1: term; exec i3-sensible-terminal'
@@ -287,6 +288,9 @@ exec --no-startup-id i3-msg 'workspace 8: music; exec "killall -q cmus; i3-sensi
 exec google-chrome-stable
 exec --no-startup-id emc
 exec idea
+
+# Start conky
+exec_always --no-startup-id launch-conky
 
 # Start polybar
 exec_always --no-startup-id launch-polybar

@@ -220,7 +220,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAUL
 bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute 0 toggle; pactl set-sink-mute 1 toggle"
 
 # Lock screen
-bindsym Control+Mod1+l exec --no-startup-id i3lock -i ~/.config/Wallpapers/lockscreen.png
+bindsym Control+Mod1+l exec --no-startup-id i3lock -u -f -e -i ~/.config/Wallpapers/lockscreen.png
 
 # Print screen
 bindsym --release Control+Mod1+p exec --no-startup-id "scrot -s -e 'mv $f ~/Pictures/Screenshots/'"
@@ -244,8 +244,8 @@ bindsym $mod+Shift+d mode "$display_mode_launcher"
 set $mw_mode_launcher Move Workspace Mode: [l]eft [c]enter [r]ight
 mode "$mw_mode_launcher" {
     # again mode doesn't switch back automatically; sos we chain the call to explicitly switch to "default" mode.
-    bindsym l move workspace to output DP1-2; mode default
-    bindsym c move workspace to output DP1-3; mode default
+    bindsym l move workspace to output DP2; mode default
+    bindsym c move workspace to output DP1; mode default
     bindsym r move workspace to output eDP1; mode default
 
     bindsym Escape mode "default"

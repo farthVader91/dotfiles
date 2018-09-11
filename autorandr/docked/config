@@ -9,12 +9,12 @@ mode 1920x1080
 pos 0x0
 rate 60.00
 rotate left
-output eDP1
-mode 1920x1080
-pos 1080x0
-primary
-rate 60.02
 output DP1
 mode 1920x1080
 pos 1080x0
 rate 60.00
+output eDP1
+mode 1920x1080
+pos 3000x0
+primary
+rate 60.02

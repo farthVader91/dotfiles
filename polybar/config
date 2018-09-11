@@ -58,7 +58,7 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = dina:pixelsize=12;1
-font-1 = siji:pixelsize=10;1
+font-1 = "Wuncon Siji:pixelsize=10;1"
 font-2 = unifont:size=6;1
 
 modules-left = bspwm i3
@@ -98,7 +98,7 @@ enable-ipc = true
 ;monitor = ${env:MONITOR:HDMI1}
 ;monitor-fallback = eDP-1
 bottom = true
-;override-redirect = true
+override-redirect = true
 
 underline-size = ${bar/top.overline-size}
 overline-size = ${bar/top.underline-size}

@@ -276,15 +276,18 @@ exec --no-startup-id "killall -q compton; compton --config ~/.config/compton.con
 # Prevent focus from shifting based on mouse movement
 focus_follows_mouse no
 
-# Application->Workspace assignment
+# Window hints and workspace assignments
 assign [class="Emacs"] $ws3
 assign [class="Google-chrome"] $ws2
 assign [class="jetbrains-idea"] $ws7
 assign [class="Conky"] $ws9
+no_focus [class="Conky"]
+for_window [class="Conky"] floating enable
+for_window [class="Conky"] resize set 260 934
+for_window [instance="sun-awt-X11-XWindowPeer"] border pixel 0
 
 # Startup applications
-exec --no-startup-id i3-msg 'workspace 1: term; exec i3-sensible-terminal'
-exec --no-startup-id i3-msg 'workspace 8: music; exec "killall -q cmus; i3-sensible-terminal -e cmus"'
+exec --no-startup-id launch-terms
 exec google-chrome-stable
 exec --no-startup-id emc
 exec idea

@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+# Launch cmus
+killall -q cmus
+i3-msg 'workspace 8: music'
+i3-sensible-terminal -e cmus
+sleep 1
+# Launch single terminal
+i3-msg 'workspace 1: term'
+i3-sensible-terminal

@@ -10,3 +10,4 @@ transmission-daemon/
 !transmission-daemon/settings.json
 configstore/
 bin/idea
+conky/

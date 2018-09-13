@@ -279,12 +279,14 @@ focus_follows_mouse no
 # Window hints and workspace assignments
 assign [class="Emacs"] $ws3
 assign [class="Google-chrome"] $ws2
-assign [class="jetbrains-idea"] $ws7
+assign [class="sun-awt-X11"] $ws7
 assign [class="Conky"] $ws9
+for_window [class="sun-awt-X11"] border pixel 0
+for_window [class="sun-awt-X11"] floating enable
+for_window [class="sun-awt-X11"] move position center
 no_focus [class="Conky"]
 for_window [class="Conky"] floating enable
 for_window [class="Conky"] resize set 260 934
-for_window [instance="sun-awt-X11-XWindowPeer"] border pixel 0
 
 # Startup applications
 exec --no-startup-id launch-terms

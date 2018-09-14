@@ -17,9 +17,6 @@ UseKeychain         yes
     ForwardAgent    yes
 ***REMOVED*** ssh-proxy %h %p
 
-***REMOVED***
-    ControlMaster   no
-
 Host *.dev
     ForwardAgent    yes
 ***REMOVED***
@@ -27,3 +24,9 @@ Host *.dev
 Host app book off adm
     ForwardAgent    yes
 ***REMOVED***
+
+Host github.com
+        User git
+        Hostname github.com
+        PreferredAuthentications publickey
+        IdentityFile /home/user/.ssh/id_rsa
